@@ -67,6 +67,11 @@ Q4. What is Babel?
 
 
 <!-- Q5. Difference between Library and Framework? -->
+:Library is a collection of functions
+	:Framework is a collection of multiple other libraries.
+	:Inversion of Control = In case of library the Execution of code will be decided by the developers whereas in case of framework the execution is already defined or decided.
+	:In case of Framework, it follows MVC structure (model view controller) whereas a library can only be the one for example React is View of MVC
+	:Framework provides you a structure in which you just put down the code your functionality , in case of library its developers duty to design the structure.
 
 
 
@@ -78,6 +83,71 @@ Q4. What is Babel?
 Q6. In react why we move from class component to function component ?
 => As we know javascript is a functional programming language, 
 thats why we are moving from class component to function components.
+
+We are moving from class components to functional components in React because : 
+  * Class components have a proper structure like constructor and this keyword which is tricky to use , in case of fucntional component we dont have to follow any such structure.
+  * Since JS is a functional programming language , so classes are not that much preferred
+  * Functional component is faster in execution compared to class
+
+
+What is the purpose of render() in React.
+
+# React JS library has 2 components i.e. functional and class components.
+# Class components uses render() function.
+# React renders HTML to the web page by using a func. called render().
+(The ReactDOM.render() function takes two arguments, HTML code and an HTML element.)
+# Purpose of the function is to display the specified HTML code inside the specified HTML element.
+# In the render() method , we can read props and state and return our JSX code to the root Component of our app.
+# In the render() method, we cannot change the state, and we cannot cause side effects( such as making an HTTP request to the webserver).
+
+*  In class component render() method is used to display the UI of the DOM structure which if not called 
+     nothing will be displayed on the browser
+
+________________________________________________________________________________________________________________
+
+## Asynchronous JavaScript: Asynchronous code allows the program to be executed immediately where the synchronous code will block further execution of the remaining code until it finishes the current one
+
+
+
+SN	Props	(props stands for properties.)                                                   State
+1.	Props are read-only.	                          State is both read and write (State changes can be asynchronous.)
+2.	Props are immutable.	                          State is mutable.
+3.	Props allow you to pass data from one             State holds information about the components.
+        component to other components as an argument.	  (The Data is passed within the component only.)
+4.	Props can be accessed by the child component.	  State cannot be accessed by child components.
+5.	Props are used to communicate between components. States can be used for rendering dynamic changes with the component.
+6.	Stateless component can have Props.	          Stateless components cannot have State.
+7.	Props make components reusable.	                  State cannot make components reusable.
+8.	Props are external and controlled by whatever     The State is internal and controlled by the React Component itself.
+              renders the component.
+9.      Props are arguments passed into React components.
+
+10.     Props are passed to components via HTML attributes.
+
+
+___________________________________________________________________________
+
+How can you update the state of a component?
+=>
+We can change state in both Functional as well as in child components:
+
+Child component:
+i)  When we declare state in constructor method in child component we can modify that state using this.setState() method.
+ii) This is achieved by using the above method inside an event trigger method like onClick();
+iii)The trigger method is then bound to the class and when it is called then this.setState() will run inside that and
+    modify the state.
+
+Functional component:
+
+i)  Functional components do not use setState method instead they use hooks for the declaration as well as modification of the states.
+ii) useState() React hook is used for achieving this which takes in 2 parameters first state name and second state modify method.
+iii)As mentioned above whenever an event is triggered then the state modify method will be called from the trigger method and modify the state.
+
+
+_________________________________________________--
+
+
+
 
 ROUTING => it helps to use SPA
 =>  React Router is used to define multiple routes in our application.
@@ -118,6 +188,9 @@ When a component is being removed from the DOM
 
 # Mouting Phase
 ### Constructor
+- constructor is a initial phase where we set our state variabels using this.state
+{} => this bracket is for to write JS in HTML(JSX)
+
 - A special type of function that will get called whenever a new component is created.
 - Used to initialize states & Binding events.
 - Not perform, Http req.

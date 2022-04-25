@@ -8,3 +8,5 @@ The current state, and function that updates the state.
 
 
 
+state is an object 
+props => 
