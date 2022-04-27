@@ -69,7 +69,7 @@ export default Compo1
 //how to use the state variable in DOM
 //update the state variable ->(2 ways to update the state variables) by creating a separate function and by writing in the same line(Callback function that we write in the same line)
 //prevState concept
-// This prevstate is required when yo want to use the initial value when you are updating the new State variable value.
+// This prevstate is required when yo want to use the initial value          when you are updating the new State variable value.
 // Redux for interview purpose prepare,usecallback, useMemo, Memo, useRef
 //Hooks is a part of react library itself , Hooks is a concept which came inside functional components
-// all the HOOkS will be named imported
+// all the HOOkS will be named imported[42:00]

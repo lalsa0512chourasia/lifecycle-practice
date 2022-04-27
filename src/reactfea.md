@@ -10,6 +10,13 @@ React is an open-source and component-based front-end JS library.
 5.=>React js is all about components.
 6.=>React JS application is made up of multiple components and each component has its own logic and controls
 
+
+# Advantagse of React :- 
+- virtual DOM is a virtual representation of the real DOM. Each time the data changes in a react app, a new virtual DOM gets created. 
+- Free and Open Source Library
+- Large Community Support.
+
+
 Q2.Features of React:
 1.JSX (JavaScript Syntax Extension)
 2.Virtual DOM 
@@ -243,3 +250,11 @@ When a component is being removed from the DOM
 - Method is invoked immediately before a component is unmounted and destroyed.
 - Cancelling any network req. , also invalidating timers.
 - DO NOT CALL THE SetSTATE METHOD
+
+
+# Q  What is HOC ?
+- HOC is the acronym(short form of) of High Order Component which is very similar to High Order Function.
+- It's a function that takes a component and returns new component with some changes
+
+# When do we need a Higher Order Component?
+- =>sharing common functionalities among all the components
